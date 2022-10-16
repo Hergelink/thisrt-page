@@ -40,11 +40,12 @@ textarea {
 }
 
 select {
-  width: 40px;
-  height: 2rem;
+  width: 80px;
+  height: 2.2rem;
   font-size: 1.2rem;
   border: 0;
   border-radius: 8;
+  text-align: center;
 }
 
 #user-info button {
@@ -98,12 +99,12 @@ select {
   }
 
   #user-info {
-    max-width: 600px;
+    max-width: 400px;
     margin-inline: auto;
   }
 
   .comment-item-container {
-    max-width: 600px;
+    max-width: 400px;
     margin-inline: auto;
   }
 }
