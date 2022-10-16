@@ -1,6 +1,9 @@
 import React from 'react';
+import SumTotal from './SumTotal';
 
-function Cart({ arr, setArr, size }) {
+function Cart({ arr, setArr }) {
+
+
   return (
     <div id='cart-container'>
       <div className='cart-items'>
@@ -25,6 +28,7 @@ function Cart({ arr, setArr, size }) {
             </button>
           </div>
         ))}
+      {arr.length > 0 && <SumTotal arr={arr}/>}
         <button id='purchase-btn'>Checkout</button>
       </div>
     </div>

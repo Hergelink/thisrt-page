@@ -26,6 +26,8 @@ function App() {
     setCartOpen((x) => !x);
   };
 
+  
+
   return (
     <div className='App'>
       <Header
@@ -43,7 +45,7 @@ function App() {
         handleAddToCart={handleAddToCart}
         handleCartToggle={handleCartToggle}
       />
-      {cartOpen && <Cart arr={arr} size={size} image={image} setArr={setArr} />}
+      {cartOpen && <Cart arr={arr} setArr={setArr} />}
     </div>
   );
 }
