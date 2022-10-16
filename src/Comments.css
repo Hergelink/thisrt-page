@@ -1,0 +1,109 @@
+#comments-div {
+  width: 90%;
+  margin-inline: auto;
+  background-color: rgba(128, 128, 128, 0.239);
+  padding: 10px;
+  border-radius: 3px;
+  margin-bottom: 4rem;
+}
+
+#comments-div h3 {
+  margin-bottom: 1.5rem;
+  font-size: 1.2rem;
+}
+
+#user-info {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+
+label {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+input {
+  width: 100%;
+  height: 1.5rem;
+  display: block;
+  border: 0;
+  border-radius: 8px;
+}
+
+textarea {
+  width: 100%;
+  display: block;
+  border: 0;
+  border-radius: 8px;
+}
+
+select {
+  width: 40px;
+  height: 2rem;
+  font-size: 1.2rem;
+  border: 0;
+  border-radius: 8;
+}
+
+#user-info button {
+  height: 35px;
+  width: 120px;
+  border-radius: 3px;
+  border: 1px solid black;
+  background-color: black;
+  color: white;
+  font-family: 'Bebas Neue', 'cursive';
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  cursor: pointer;
+  margin-inline: auto;
+}
+
+#user-info button:hover {
+  border: 1px solid black;
+  background-color: rgb(56, 56, 56);
+  color: white;
+  transform: scale(1.02);
+}
+
+.comment-item-container {
+  margin-top: 1rem;
+  padding: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  border-radius: 5px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.comment-delete-btn {
+  width: 30px;
+  height: 30px;
+  border: 0;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: red;
+  color: white;
+  font-style: bold;
+}
+
+@media only screen and (min-width: 768px) {
+  #comments-div {
+    max-width: 1200px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  #user-info {
+    max-width: 600px;
+    margin-inline: auto;
+  }
+
+  .comment-item-container {
+    max-width: 600px;
+    margin-inline: auto;
+  }
+}

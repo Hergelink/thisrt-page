@@ -4,6 +4,8 @@ import './App.css';
 import Header from './components/Header';
 import Item from './components/Item';
 import Cart from './components/Cart';
+import Comments from './components/Comments';
+import Footer from './components/Footer';
 
 function App() {
   const [size, setSize] = useState('S');
@@ -46,6 +48,8 @@ function App() {
         handleCartToggle={handleCartToggle}
       />
       {cartOpen && <Cart arr={arr} setArr={setArr} />}
+      <Comments />
+      <Footer />
     </div>
   );
 }
